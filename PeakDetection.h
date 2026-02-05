@@ -45,7 +45,7 @@ class PeakDetection {
 
   private:
     int index, lag, threshold, peak;
-    double influence, EPSILON, *data, *avg, *std;
+    double influence, EPSILON, SUM, SUMOFSQUARES, *data, avg, std, *sqdata;
     double getAvg(int, int);
     double getPoint(int, int);
     double getStd(int, int);
