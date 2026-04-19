@@ -117,7 +117,6 @@ double PeakDetection::add(double newSample) {
     avg = getAvg(j, lag);
     std = getStd(j, lag);
   index++;
-  index++;
   if (index >= 16383) //2^14
     index = lag + j;
   //return(std[j]);
